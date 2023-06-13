@@ -1,5 +1,8 @@
-import "./globals.css";
+// import "./globals.css";
+"use client";
+import { Grid } from "@mui/material";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +18,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body></body>
+      <body className={inter.className}>
+        <div>
+          <div>{children}</div>
+          <div></div>
+          <div></div>
+        </div>
+        <Grid container spacing={3}>
+          <Grid item xs></Grid>
+          <Grid item xs={6}></Grid>
+          <Grid item xs></Grid>
+        </Grid>
+      </body>
     </html>
   );
 }
