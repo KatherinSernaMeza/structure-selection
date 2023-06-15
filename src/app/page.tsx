@@ -3,10 +3,12 @@ import { Container, Grid } from "@mui/material";
 import Layout from "../app/components/Layout";
 import Introduction from "./components/Introduction";
 import ListContainer from "./components/ListContainer";
+import Nav from "./components/Nav";
 
 export default function Home() {
   return (
     <Grid container>
+      <Nav />
       <Grid item xs={12}>
         <Layout />
       </Grid>
