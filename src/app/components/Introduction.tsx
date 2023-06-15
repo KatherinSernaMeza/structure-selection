@@ -2,7 +2,7 @@ import React from "react";
 
 const Introduction = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", paddingBottom: "25px" }}>
       <h3>How HTML structure works</h3>
       <p>
         We publish html, tips and tricks for improving how you architect apps

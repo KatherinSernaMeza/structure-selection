@@ -4,35 +4,28 @@ import React from "react";
 
 const ListContainer = () => {
   return (
-    <>
-      <Grid item xs={4}>
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <Grid item xs={12} style={{ display: "flex" }}>
+        <HtmlContainer />
+        <HtmlContainer />
         <HtmlContainer />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} style={{ display: "flex" }}>
+        <HtmlContainer />
+        <HtmlContainer />
         <HtmlContainer />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} style={{ display: "flex" }}>
+        <HtmlContainer />
+        <HtmlContainer />
         <HtmlContainer />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} style={{ display: "flex" }}>
+        <HtmlContainer />
+        <HtmlContainer />
         <HtmlContainer />
       </Grid>
-      <Grid item xs={4}>
-        <HtmlContainer />
-      </Grid>
-      <Grid item xs={4}>
-        <HtmlContainer />
-      </Grid>
-      <Grid item xs={4}>
-        <HtmlContainer />
-      </Grid>
-      <Grid item xs={4}>
-        <HtmlContainer />
-      </Grid>
-      <Grid item xs={4}>
-        <HtmlContainer />
-      </Grid>
-    </>
+    </div>
   );
 };
 

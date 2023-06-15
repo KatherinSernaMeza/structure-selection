@@ -1,5 +1,5 @@
 "use client";
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Layout from "../app/components/Layout";
 import Introduction from "./components/Introduction";
 import ListContainer from "./components/ListContainer";
@@ -14,7 +14,9 @@ export default function Home() {
         <Introduction />
       </Grid>
       <Grid item xs={12} style={{ display: "contents" }} maxWidth={600}>
-        <ListContainer />
+        <Container>
+          <ListContainer />
+        </Container>
       </Grid>
     </Grid>
   );
