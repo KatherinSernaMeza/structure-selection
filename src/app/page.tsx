@@ -4,6 +4,7 @@ import Layout from "../app/components/Layout";
 import Introduction from "./components/Introduction";
 import ListContainer from "./components/ListContainer";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
         <Container>
           <ListContainer />
         </Container>
+      </Grid>
+      <Grid item xs={12}>
+        <Footer />
       </Grid>
     </Grid>
   );
